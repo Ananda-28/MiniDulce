@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="es">
+
+
+    <head> 
+         <title> Mini Dulce </title>
+         <meta name="description" content="Pagina web oficial del negocio casero, Mini Dulce." />
+         <meta name="author" content="María Fernanda Paredes" />
+         <meta name="keywords" content="Pasteles, postres, cupcakes, dulce, mini dulce, alfajores, negocio, casero" />
+         <meta charset="utf-8" />
+         <link rel="stylesheet" href="../estilos.css">
+         <link  rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+         <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We" crossorigin="anonymous">
+
+    </head>
+
+    <body>
+
+<div class="agrupar">
+            <header class="header">
+
+                <img class="animate__animated animate__pulse animate__infinite" src="../logo.png">
+                
+            </header>
+            <nav class="menu">
+                <ul>
+                    <li><a href="../index.html">Inicio</a></li>
+                    <li><a href="../Postres/Postres.html">Postres</a></li>
+                    <li><a href="Contacto.html">Contacto</a></li>
+                </ul>
+            </nav>
+        
+
+           
+            <form id="form" class="epico" action="">
+                <div>
+                  <h1>Contactanos</h1>
+                  <br>
+                  <div class="grupo row">
+                    <label class="col-2 text-center">Nombre</label>
+                    <input class="inputBorders col-10" placeholder="Ingrese su nombre" type="text" name="name" id="name" required> <span class="barra"></span>
+                  </div>
+                  <div class="grupo row">
+                    <label class="col-2 text-center">Email</label>
+                    <input class="inputBorders col-10" type="email" placeholder="Ingrese su email" name="mail" id="mail" required> <span class="barra"></span>
+                  </div>
+                  <div class="grupo row">
+                    <label class="col-2 text-center">Teléfono</label>
+                    <input class="inputBorders col-10" type="number" placeholder="Ingrese su telefono" name="phone" id="phone" required> <span class="barra"></span>
+                  </div>
+                  <div class="grupo row ml-5">
+                    <label class="col-2 text-center">Pedido</label>
+                   <textarea class="inputBorders col-10" placeholder="Ingrese su pedido" id="pedido" name="pedido" rows="3" required></textarea> <span clas="barra"></span>
+                </div>
+                  <button type="submit">Hacer Pedido</button>
+
+
+
+                </div>
+            </form>
+            <a href="mailto:AL11075@abrahamlincoln.edu.pe" id="trucazo"></a>
+
+            <footer class="pie">
+                © Mini Dulce 2020 - 2021. Todos los derechos reservados.
+                 Contácto: AL11075@abrahamlincoln.edu.pe
+            </footer>
+            <br>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-U1DAWAznBHeqEIlVSCgzq+c9gqGAJn5c/t99JyeKa9xxaYpSvHU5awsuZVVFIhvj" crossorigin="anonymous"></script>
+    <script>
+      const $form = document.querySelector('#form')
+      const $buttonMailto = document.querySelector('#trucazo')
+  
+      $form.addEventListener('submit', handleSubmit)
+  
+      function handleSubmit(event) {
+        event.preventDefault()
+        const form = new FormData(this)
+        $buttonMailto.setAttribute('href', `mailto:AL11075@abrahamlincoln.edu.pe?subject=nombre ${form.get('name')}  correo ${form.get('mail')}&body=Telefono: ${form.get('phone')} ${form.get('pedido')} `)
+        $buttonMailto.click()
+      }
+    </script>
+  </div>
+</body>
+
+
+</html>
