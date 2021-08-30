@@ -1,0 +1,180 @@
+p {
+    
+    font-weight: lighter;
+    text-align: center;
+    margin-inline: 15px;
+    }
+
+
+body {
+    font-family: sans-serif;
+    }
+
+.agrupar{
+    width: 1000px;
+    background-color: #fef0e7;
+    margin: 50px auto;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.header{
+    background-color: #ffc5c1;
+    padding: 05px;
+}
+
+.jpg {
+
+    max-width: 100px;
+    max-height: 100px;
+}
+
+.menu {text-align: center;}
+
+.menu li {
+list-style: none;
+padding: 03px;
+display: inline-block;
+color: black;
+}
+
+.section {
+    margin: 20px 100px;
+    margin-top: 50px;
+    text-align: center;
+    align-content: center;
+}
+
+.pie {
+    clear: both;
+    text-align: center;
+    margin-top: 25px;
+    margin-bottom: 20px;
+    background-color: #fef0e7;
+}
+
+.menu li a {
+    text-decoration: none;
+    padding: 20px;
+}
+
+.menu li a:hover {
+    background-color: #ffc5c1; }
+
+.container {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center; }
+
+    .container img {
+        height: auto;
+        width: auto;
+        max-width: 100px;
+        max-height: 100px; 
+        margin-right: 50px;
+        margin-left: 50px;
+        margin-top: 25px; }
+        
+.header img {
+    height: 150px;
+    width: 300px;
+}
+
+.section img {
+    height: auto;
+    width: auto;
+    max-width: 200px;
+    max-height: 200px; 
+    margin-right: 50px;
+    margin-left: 50px;
+    margin-top: 25px; }
+
+.owo {
+
+    align-items: center;
+    width: 1000px;
+    background-color: #fef0e7;
+
+}
+
+.owo h1 {
+    font-family: sans-serif;
+    font-size: 30px;
+    text-align: center;
+    margin-bottom: 50px;
+    margin-top: 50px;
+}
+
+.owo img {
+    width: 200px;
+    float: left;
+    margin-left: 100px;
+    margin-right: 40px;
+    margin-bottom: 100px;
+}
+
+.owo p {
+font-size: 18px;
+margin-right: 100px;
+}
+
+.tooltip {
+    text-decoration: none;
+    position: relative;
+}
+
+.tooltip:hover {
+    font-weight: bold;
+}
+
+.tooltip-box {
+    background: #ffc5c1;
+    font-size: 20px;
+    padding: 5px 10px;
+    border-radius: 5px;
+    color: black;
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 100px;
+
+    display: none
+}
+
+.tooltip:hover .tooltip-box {
+    display: inline-block
+}
+
+.epico {
+    display: flex;
+    justify-content: center;
+    align-items:stretch;
+}
+
+.grupo {
+    position: relative;
+    margin: 45px;
+}
+
+input,textarea {
+    font-size: 18px;
+    padding: 12px 12px 12px 6px;
+    display: block;
+    width: 100%;
+    border-color: #ffc5c1;
+    border-width: 03px;
+    resize: none;
+} 
+
+.epico [type="submit"] {
+    background-color: pink;
+    padding: 10px;
+    border: none;
+    border-radius: 30px;
+    margin-left: 600px;
+}
+
+.epico [type="submit"]:hover {
+    background-color: rgb(235, 142, 157);
+}
